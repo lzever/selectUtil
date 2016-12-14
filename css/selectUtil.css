@@ -1,0 +1,76 @@
+ .selectDiv-box {
+             position: relative;
+             display: inline-block;
+             min-width: 150px;
+             padding: 7px 0;
+             border-radius: 10px;
+             border:1px #eee solid;
+             -webkit-box-shadow: 0 0 10px 1px #ccc;  
+              -moz-box-shadow: 0 0 10px 1px #ccc;  
+              box-shadow: 0 0 10px 1px #ccc;  
+              cursor: pointer;
+              line-height: 16px;
+        }
+        .selectDiv-box input {
+            display: none;
+            width: 90%; 
+            margin: 0 5%;}
+        .selectDiv-box ul {
+            display: none;
+            height: 200px;
+            margin: 10px 0 0;
+            padding: 0;
+            overflow-y: scroll;
+        }
+        .selectDiv-box li {
+            height: 20px;
+            padding: 5px 10px;
+            list-style: none;
+            font-size: 14px;
+            white-space:nowrap; 
+            overflow:hidden; 
+            text-overflow:ellipsis;
+        }
+        .selectDiv-box li:hover {
+            background-color: #b3e0ff;
+        }
+
+        .selectDiv {
+            
+            position: relative;
+            height: 16px;
+            padding: 10px 60px 10px 10px;
+            margin:-7px 0;
+            white-space:nowrap; 
+            overflow:hidden; 
+            text-overflow:ellipsis;
+            font-size: 14px;
+            text-align: center;
+            
+        }
+
+        .selectDiv span {
+             position: absolute;
+             display: inline-block;
+             height: 36px;
+             width: 40px;
+             right: 0;
+             top: 0;
+             border-radius:0 10px 10px 0 ;
+             background-color: #87abdc;
+        }
+
+         .selectDiv span:after {
+              position: relative;
+              width: 0;
+              height: 0;
+              top: 50%;
+              display: inline-block;
+              content: " ";
+              border: 5px solid #87abdc;
+              border-top-color: #eee;
+              margin-top: -3px;
+         }
+        
+        .selectDiv-box.trigger .selectDiv {display: none;}
+        .selectDiv-box.trigger ul,  .selectDiv-box.trigger input {display: block;}

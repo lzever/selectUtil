@@ -1,0 +1,35 @@
+<doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <link rel="stylesheet" type="text/css" href="css/selectUtil.css">
+   
+</head>
+<body>
+<div>
+    <select name="" id="test" >
+        <option value="val1">测试1</option>
+        <option value="val2">测试2</option>
+    </select>
+    
+  </div>
+  <script src="js/selectUtil.js" ></script>
+<script>
+   window.onload = function(){
+ 
+     var test2 = new selectSearch({
+            "el" : "#test",
+            "callback" : function(){
+                alert(this.selectedData.value)
+            }
+        })
+
+   }
+
+       
+        
+    </script>
+</body>
+</html>
